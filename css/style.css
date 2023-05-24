@@ -7,7 +7,6 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
-
 @media (min-width: 1440px) {
 	.container {
 		width: 1410px;
@@ -84,7 +83,7 @@ hr {
 	color: #1f386e;
 	text-transform: uppercase;
 	letter-spacing: -1px;
-	width: 80px;
+	width: 220px;
     height: 80px;
     padding: 0;
 }
@@ -184,15 +183,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	display: table;
 	width: 100%;
 	padding: 0;
-	background: url(../img/intro-bg.jpg) center center no-repeat;
+	height: 86vh;
+	background: url(../img/siteimg/20.jpeg) top -120px center no-repeat;
 	background-color: #e5e5e5;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 }
+
+.intro.shanti-arcade {
+	background: url(../img/siteimg/22.jpeg) top 20px center no-repeat;
+	background-size: 100%;
+}
 .intro .overlay {
 	background: rgba(0,0,0,0.3);
+	height: 86vh;
+	width: 100%;
 }
 .intro h1 {
 	font-family: 'Montserrat', sans-serif;
@@ -332,6 +339,12 @@ header .intro-text {
 .portfolio-item .hover-bg {
 	overflow: hidden;
 	position: relative;
+}
+
+.portfolio-item img {
+	width: 100%;
+	height: 320px;
+	object-fit: cover;
 }
 .hover-bg .hover-text {
 	position: absolute;
@@ -534,3 +547,40 @@ color: #777;
 	margin: 50px 0;
 }
 }
+
+
+.navbar-collapse {
+	float: right;
+}
+
+@media (min-width: 768px) {
+	.navbar-collapse {
+		margin-top: 16px;
+	}
+}
+
+@media (max-width: 767px) {
+	.intro h1 {
+		font-size: 36px;
+		line-height: 42px;
+	}
+	.navbar-collapse {
+		width: 100%;
+	}
+	.navbar-toggle {
+		margin-top: 20px;
+	}
+
+	#menu .phone {
+		float: unset;
+		margin-left: 8px;
+		display: flex;
+		align-items: center;
+		font-weight: bold;
+	}
+
+	#menu .phone span {
+		margin-right: 5px;
+	}
+}
+
